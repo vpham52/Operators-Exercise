@@ -28,8 +28,9 @@
             //Console.WriteLine($"The area of a circle with a radius of {userRadius} is {AreaOfCircle(userRadius)}.");
 
             //Exercise 2 - call - version 2
-            AreaOfCircle();
-            
+            Console.WriteLine($"Area: {AreaOfCircle(26)}");
+            Console.WriteLine($"Area: {AreaOfCircle(53)}");
+
             //Thought Exercise
             //var i = 3;
             //var j = 4;
@@ -49,17 +50,17 @@
         //}
 
         //Exercise 2 - version 2
-        public static double AreaOfCircle()
+        public static double AreaOfCircle(double radius)
         {
-            
-            Console.WriteLine($"What is your radius?");
-            var radius = double.Parse(Console.ReadLine());
+            //Console.WriteLine("What is the radius of your circle?");
 
+            //var userInput = double.Parse(Console.ReadLine());
+
+            Console.WriteLine($"Radius: {radius}");
             var area = Math.PI * Math.Pow(radius, 2);
 
-            Console.WriteLine($"The area of a cirlce with a radius of {radius} is {area}.");
-
             return area;
+                       
 
         }
 
